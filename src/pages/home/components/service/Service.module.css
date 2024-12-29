@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url("https://preview.colorlib.com/theme/consultingbiz/assets/img/gallery/section_bg02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.context{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+}
+.text p{
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight:500 ;
+    color:#cecece;
+}
+.text h1{
+    font-size: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight:900 ;
+    color:#ffffff;
+}
+.text .top{
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight:500 ;
+    color:#ffffff;
+}
+.text .bottom {
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    font-weight:400 ;
+    color:#cecece;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.text button{
+    height: 58px;
+    width: 195px;
+    font-size:16px ;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    color: white;
+    background-color:#FF2143 ;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.text button:hover{
+    color: black;
+    background-color: white;
+}
+.img img{
+    width: 570px;
+    height: 507px;
+}
+@media(max-width:576px){
+    .img img{
+        width: 200px;
+        height: 207px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .text h1{
+        font-size: 18px;
+    }
+    .text .top{
+        font-size: 10px;
+    }
+    .text{
+        gap: 10px;
+    }
+    .text .bottom{
+        font-size: 9px;
+    }
+    .text button{
+        height: 40px;
+        width: 165px;
+        font-size: 14px;
+    }
+}
+@media(max-width:455px){
+    .context{
+        display: grid;
+        grid-template-columns: (1,1fr);
+    }
+
+    .text .top{
+        width: 180px;
+        text-align: center;
+    }
+    .text .bottom{
+        width: 180px;
+        text-align: center;
+    }
+}

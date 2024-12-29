@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:47px ;
+    background-color: #0D2D3E;
+}
+.context{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.time{
+    display: flex;
+}
+.am p{
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+.sun p{
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+.watch{
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hicons{
+    display: flex;
+    gap: 20px;
+}
+.shop{
+    color: white;
+}
+.heart{
+    color: white;
+}
+@media(max-width:567px){
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:446px){
+    .container{
+        height: 150px;
+    }
+    .time{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
